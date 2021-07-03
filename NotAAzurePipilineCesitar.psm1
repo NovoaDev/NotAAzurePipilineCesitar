@@ -7,16 +7,16 @@ Function NotAAzurePipilineCesitar {
         0 {
             $RutaArchivo0 = ObtenerArchivo
             $RutaCarpeta0 = ObtenerCarpeta("Seleccione carpeta donde quiere despaquetar")
-            $Comando = $Pasopapath + "\pasopa -unpack " + $RutaArchivo0 + $RutaCarpeta0 
-            Invoke-Expression -Command $Comando
+            $Comando = $Pasopapath + "\pasopa -unpack " + $RutaArchivo0 + " " + $RutaCarpeta0 
         }
-
         1 {   
             $RutaCarpeta1 = ObtenerCarpeta("Seleccione la carpeta de proyecto despaquetado")
             $RutaCarpeta2 = ObtenerCarpeta("Seleccione donde quiere meter el paquetote")
             $Comando = $Pasopapath + "\pasopa -pack " + $RutaCarpeta2 + "\Paquetote.msapp " + $RutaCarpeta1 
-            Invoke-Expression -Command $Comando
         }
+    }
+    if ($Comando.FileName -ne "") { 
+      Invoke-Expression -Command $Comando
     }
 }
 
