@@ -8,14 +8,14 @@ Buscar ruta de pasopa, colocarla dentro del .bat en la variable SAYCORON_PASOPAT
 ##Importar modulo a powerShell 
 Import-module (Ruta archivo NotAAzurePipilineCesitar.psm1)
 
-##Verificar que hemos importado correctamente el m骴ulo usando el comando Get-Module y verificando que se encuentra en la lista.
+##Verificar que hemos importado correctamente el m贸dulo usando el comando Get-Module y verificando que se encuentra en la lista.
  
-##Configurar modulo para que cargue autom醫icamente en powershell(Opcional)
-Si queremos que al abrir PS ya tendremos importado el C骴igo tendremos que hacer lo siguiente:
-- Escribiremos $env:PSModulePath, Esto mostrara todas las carpetas donde puedo guardar mis m骴ulos para que carguen directamente al arrancar PS.
-- Abrimos alguna de las carpetas de la lista y copiaremos el m骴ulo.
+##Configurar modulo para que cargue autom谩ticamente en powershell(Opcional)
+Si queremos que al abrir PS ya tendremos importado el C贸digo tendremos que hacer lo siguiente:
+- Escribiremos $env:PSModulePath, Esto mostrara todas las carpetas donde puedo guardar mis m贸dulos para que carguen directamente al arrancar PS.
+- Abrimos alguna de las carpetas de la lista y copiaremos el m贸dulo.
 - Cerramos y abrimos el powershell.
 
 
 ##Uso
-Usaremos el comando NotAAzurePipilineCesitar para abrir el asistente que funciona a tiro de click.
+Usaremos el comando NotAAzurePipilineCesitar para abrir el asistente que funciona a tiro de click..
